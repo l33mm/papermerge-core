@@ -22,7 +22,7 @@ services:
   worker:
     <<: *backend
     ports:
-      - 8090:8090
+      - 8005:80
     command: worker
   backend:
     <<: *backend
