@@ -21,6 +21,8 @@ x-backend: &backend
 services:
   worker:
     <<: *backend
+    ports:
+      - 8000:80
     command: worker
   backend:
     <<: *backend
